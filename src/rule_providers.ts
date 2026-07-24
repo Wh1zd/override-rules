@@ -103,7 +103,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "yaml",
         interval: 86400,
-        url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn_Classical.yaml",
+        url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/LinkedIn/LinkedIn_Classical.yaml",
         path: "./ruleset/linkedin.yaml",
     },
     facebook: {
@@ -111,7 +111,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "yaml",
         interval: 86400,
-        url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook_Classical.yaml",
+        url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Facebook/Facebook_Classical.yaml",
         path: "./ruleset/facebook.yaml",
     },
     whatsapp: {
@@ -119,7 +119,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "yaml",
         interval: 86400,
-        url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WhatsApp/WhatsApp_Classical.yaml",
+        url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/WhatsApp/WhatsApp_Classical.yaml",
         path: "./ruleset/whatsapp.yaml",
     },
     GFWList: {
