@@ -117,10 +117,10 @@ export const ruleProviders: Record<string, RuleProvider> = {
     whatsapp: {
         type: "http",
         behavior: "classical",
-        format: "text",
+        format: "yaml",
         interval: 86400,
-        url: `${CDN_URL}/gh/Wh1zd/override-rules@master/ruleset/WhatsApp.list`,
-        path: "./ruleset/whatsapp.list",
+        url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Whatsapp/Whatsapp.yaml`,
+        path: "./ruleset/whatsapp.yaml",
     },
     GFWList: {
         type: "http",
