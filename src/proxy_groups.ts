@@ -254,6 +254,24 @@ export function buildProxyGroups({
             type: "select",
             proxies: ["REJECT", "REJECT-DROP", "DIRECT"],
         },
+         {
+            name: PROXY_GROUPS.LINKEDIN,
+            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/LinkedIn.png`,
+            type: "select",
+            proxies: defaultProxies,
+        },
+        {
+            name: PROXY_GROUPS.FACEBOOK,
+            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Facebook.png`,
+            type: "select",
+            proxies: defaultProxies,
+        },
+        {
+            name: PROXY_GROUPS.WHATSAPP,
+            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/WhatsApp.png`,
+            type: "select",
+            proxies: defaultProxies,
+        },
         {
             name: PROXY_GROUPS.FINAL,
             icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Final.png`,
