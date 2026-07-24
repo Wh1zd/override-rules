@@ -256,7 +256,7 @@ export function buildProxyGroups({
         },
         {
             name: PROXY_GROUPS.LINKEDIN,
-            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/LinkedIn.png`,
+            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/Linkedin.png`,
             type: "select",
             proxies: defaultProxies,
         },
@@ -268,7 +268,7 @@ export function buildProxyGroups({
         },
         {
             name: PROXY_GROUPS.WHATSAPP,
-            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/WhatsApp.png`,
+            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/WhatsApp.jpg`,
             type: "select",
             proxies: defaultProxies,
         },
