@@ -184,12 +184,6 @@ export function buildProxyGroups({
             proxies: defaultProxies,
         },
         {
-            name: PROXY_GROUPS.SPOTIFY,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Spotify.png`,
-            type: "select",
-            proxies: defaultProxies,
-        },
-        {
             name: PROXY_GROUPS.TELEGRAM,
             icon: `${CDN_URL}/gh/powerfullz/override-rules@master/icons/Telegram.png`,
             type: "select",
