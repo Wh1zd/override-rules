@@ -119,7 +119,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "yaml",
         interval: 86400,
-        url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/WhatsApp/WhatsApp.yaml`,
+        url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/WhatsApp/Whatsapp.yaml`,
         path: "./ruleset/whatsapp.yaml",
     },
     GFWList: {
