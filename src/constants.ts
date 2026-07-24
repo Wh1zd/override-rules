@@ -29,7 +29,6 @@ export const PROXY_GROUPS = {
     YOUTUBE: "Youtube",
     NETFLIX: "Netflix",
     TIKTOK: "TikTok",
-    SPOTIFY: "Spotify",
     TELEGRAM: "Telegram",
     TWITTER: "Twitter",
     TWITCH: "Twitch",
