@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.13](https://github.com/powerfullz/override-rules/compare/src-v2.5.12...src-v2.5.13) (2026-07-24)
+
+
+### Other
+
+- Update rule_providers.ts ([045c727](https://github.com/powerfullz/override-rules/commit/045c727751728a84b8ae62a51e5c16e8381e2d1c))
+- WhatsApp.list ([0c5c898](https://github.com/powerfullz/override-rules/commit/0c5c898285c0f4cb478e47d8065d6cd622f0a2c7))
 ## [2.5.12](https://github.com/powerfullz/override-rules/compare/src-v2.5.11...src-v2.5.12) (2026-07-24)
 
 
