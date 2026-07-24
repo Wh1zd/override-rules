@@ -19,7 +19,6 @@ const baseRules = [
     `GEOSITE,netflix,${PROXY_GROUPS.NETFLIX}`,
     `GEOSITE,twitch,${PROXY_GROUPS.TWITCH}`,
     `GEOIP,netflix,${PROXY_GROUPS.NETFLIX},no-resolve`,
-    `GEOSITE,spotify,${PROXY_GROUPS.SPOTIFY}`,
     `GEOSITE,twitter,${PROXY_GROUPS.TWITTER}`,
     `RULE-SET,linkedin,${PROXY_GROUPS.LINKEDIN}`,
     `RULE-SET,whatsapp,${PROXY_GROUPS.WHATSAPP}`,
