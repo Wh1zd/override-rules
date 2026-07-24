@@ -1,11 +1,17 @@
 # Changelog
 
-## [2.5.10](https://github.com/powerfullz/override-rules/compare/src-v2.5.9...src-v2.5.10) (2026-07-24)
+## [2.5.11](https://github.com/powerfullz/override-rules/compare/src-v2.5.9...src-v2.5.11) (2026-07-24)
 
 
 ### Bug Fixes
 
-- Fix icons and whatsapp url ([563b6d6](https://github.com/powerfullz/override-rules/commit/563b6d6a9d7ffd861886a2b934156a05d4576f78))
+- Fix icons and whatsapp url ([93ea305](https://github.com/powerfullz/override-rules/commit/93ea3056a50bff89d09b510ea14480dfd3476224))
+
+
+### Other
+
+- Update proxy_groups.ts ([8dbae92](https://github.com/powerfullz/override-rules/commit/8dbae924a635ba9f4008f0d90b855b26e045d371))
+- Update rule_providers.ts ([1b76c8d](https://github.com/powerfullz/override-rules/commit/1b76c8d401faa91455ba61939e130a608e20051f))
 ## [2.5.9](https://github.com/powerfullz/override-rules/compare/src-v2.5.8...src-v2.5.9) (2026-07-24)
 
 
