@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.9](https://github.com/powerfullz/override-rules/compare/src-v2.5.8...src-v2.5.9) (2026-07-24)
+
+
+### Other
+
+- Update rule_providers.ts ([004bcee](https://github.com/powerfullz/override-rules/commit/004bcee9ac216ab983fbf61fb546dac49e748a14))
 ## [2.5.8](https://github.com/powerfullz/override-rules/compare/src-v2.5.7...src-v2.5.8) (2026-07-24)
 
 
