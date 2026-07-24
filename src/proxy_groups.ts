@@ -75,7 +75,6 @@ export function buildProxyGroups({
 }: BuildProxyGroupsInput): ProxyGroup[] {
     const hasTW = countryNames.includes("台湾");
     const hasHK = countryNames.includes("香港");
-    const hasUS = countryNames.includes("美国");
     const groups: Array<ProxyGroup | null> = [
         {
             name: PROXY_GROUPS.SELECT,
