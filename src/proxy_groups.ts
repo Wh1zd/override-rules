@@ -254,21 +254,21 @@ export function buildProxyGroups({
             type: "select",
             proxies: ["REJECT", "REJECT-DROP", "DIRECT"],
         },
-         {
+        {
             name: PROXY_GROUPS.LINKEDIN,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/LinkedIn.png`,
+            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/LinkedIn.png`,
             type: "select",
             proxies: defaultProxies,
         },
         {
             name: PROXY_GROUPS.FACEBOOK,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Facebook.png`,
+            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/Facebook.png`,
             type: "select",
             proxies: defaultProxies,
         },
         {
             name: PROXY_GROUPS.WHATSAPP,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/WhatsApp.png`,
+            icon: `${CDN_URL}/gh/Wh1zd/override-rules@master/icons/WhatsApp.png`,
             type: "select",
             proxies: defaultProxies,
         },
