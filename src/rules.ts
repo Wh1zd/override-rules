@@ -24,7 +24,7 @@ const baseRules = [
     `GEOSITE,bahamut,${PROXY_GROUPS.BAHAMUT}`,
     `GEOSITE,pikpak,${PROXY_GROUPS.PIKPAK}`,
     `GEOSITE,twitter,${PROXY_GROUPS.TWITTER}`,
-     `RULE-SET,linkedin,${PROXY_GROUPS.LINKEDIN}`,
+    `RULE-SET,linkedin,${PROXY_GROUPS.LINKEDIN}`,
     `RULE-SET,facebook,${PROXY_GROUPS.FACEBOOK}`,
     `RULE-SET,whatsapp,${PROXY_GROUPS.WHATSAPP}`,
     `RULE-SET,Weibo,${PROXY_GROUPS.WEIBO}`,
