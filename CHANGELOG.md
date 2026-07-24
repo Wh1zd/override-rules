@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.10](https://github.com/powerfullz/override-rules/compare/src-v2.5.9...src-v2.5.10) (2026-07-24)
+
+
+### Bug Fixes
+
+- Fix icons and whatsapp url ([563b6d6](https://github.com/powerfullz/override-rules/commit/563b6d6a9d7ffd861886a2b934156a05d4576f78))
 ## [2.5.9](https://github.com/powerfullz/override-rules/compare/src-v2.5.8...src-v2.5.9) (2026-07-24)
 
 
