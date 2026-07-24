@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.5.6](https://github.com/powerfullz/override-rules/compare/...src-v2.5.6) (2026-07-24)
+## [2.5.7](https://github.com/powerfullz/override-rules/compare/...src-v2.5.7) (2026-07-24)
 
 
 ### Bug Fixes
@@ -481,6 +481,7 @@ fix: 修正 GooglePlayFix.list 中的域名后缀格式 ([718cf8f](https://githu
 
 ### Other
 
+- Init ([4cd3075](https://github.com/powerfullz/override-rules/commit/4cd30753e911d1f4e41a37cabe3790af6b66ef86))
 - Update proxy_groups.ts ([08bb238](https://github.com/powerfullz/override-rules/commit/08bb238368fb893390616c640b93dc6801117b1f))
 - Add files via upload ([13675ab](https://github.com/powerfullz/override-rules/commit/13675aba27c16e8c4ad6bcafeb76c21b9b010797))
 - Update rule_providers.ts ([27a9351](https://github.com/powerfullz/override-rules/commit/27a9351ae2d308bccacc048a1e7c7a4f29da9410))
