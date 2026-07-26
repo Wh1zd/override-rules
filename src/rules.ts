@@ -6,6 +6,7 @@ const baseRules = [
     `RULE-SET,ADBlock,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,AdditionalFilter,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,SogouInput,${PROXY_GROUPS.SOGOU_INPUT}`,
+    `DOMAIN-SUFFIX,events.data.microsoft.com,${PROXY_GROUPS.MICROSOFT}`,
     `RULE-SET,StaticResources,${PROXY_GROUPS.STATIC_RESOURCES}`,
     `RULE-SET,CDNResources,${PROXY_GROUPS.STATIC_RESOURCES}`,
     `RULE-SET,AdditionalCDNResources,${PROXY_GROUPS.STATIC_RESOURCES}`,
