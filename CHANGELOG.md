@@ -1,5 +1,32 @@
 # Changelog
 
+## [2.5.17](https://github.com/powerfullz/override-rules/compare/src-v2.5.16...src-v2.5.17) (2026-07-26)
+
+
+### Other
+
+- Update rules.ts ([1b30a93](https://github.com/powerfullz/override-rules/commit/1b30a9336adb4654fa0fd7b2f6a7f57e47bde746))
+- Update rule_providers.ts ([32f8c11](https://github.com/powerfullz/override-rules/commit/32f8c113bbe7e12301148c06a3b06e9d879db0df))
+## [2.5.16](https://github.com/powerfullz/override-rules/compare/src-v2.5.15...src-v2.5.16) (2026-07-24)
+
+
+### Other
+
+- Update package.json ([63a21dd](https://github.com/powerfullz/override-rules/commit/63a21dd7401cf84533ea8b94783190bb48e8647d))
+- Update proxy_groups.ts ([d328112](https://github.com/powerfullz/override-rules/commit/d328112d2c40569945d933915c83d075bf2dab25))
+## [2.5.15](https://github.com/powerfullz/override-rules/compare/src-v2.5.14...src-v2.5.15) (2026-07-24)
+
+
+### Other
+
+- Update package.json ([ab725ff](https://github.com/powerfullz/override-rules/commit/ab725ff56d6b8497469a09607aada116c39a498d))
+- Update rules.ts ([f124651](https://github.com/powerfullz/override-rules/commit/f124651ac301800ecfc1a9f584f420e5f33630be))
+- Update proxy_groups.ts ([6ec71de](https://github.com/powerfullz/override-rules/commit/6ec71de16e7f444063e3a219a3255385afb53154))
+- Update constants.ts ([07834e5](https://github.com/powerfullz/override-rules/commit/07834e544f5ce824f5488789f913fd31b725a4ae))
+- Update rule_providers.ts ([69c001d](https://github.com/powerfullz/override-rules/commit/69c001df899f74b14d29724f27dee46644cbe2be))
+- Update rules.ts ([2b3a6b7](https://github.com/powerfullz/override-rules/commit/2b3a6b735ca60942c4b56afac7bed1c74cd09055))
+- Update proxy_groups.ts ([b218850](https://github.com/powerfullz/override-rules/commit/b2188505b9e16ff26379d1c4ce5b2ccf2e4ebf4f))
+- Update constants.ts ([49094aa](https://github.com/powerfullz/override-rules/commit/49094aac7f596dd2d9713af45be514805523d435))
 ## [2.5.14](https://github.com/powerfullz/override-rules/compare/src-v2.5.13...src-v2.5.14) (2026-07-24)
 
 
