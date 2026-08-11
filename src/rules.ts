@@ -33,7 +33,7 @@ const baseRules = [
     `GEOSITE,google-play@cn,DIRECT`,
     `GEOSITE,microsoft@cn,DIRECT`,
     `GEOSITE,apple,${PROXY_GROUPS.APPLE}`,
-        `RULE-SET,Microsoft,${PROXY_GROUPS.MICROSOFT}`,
+    `RULE-SET,Microsoft,${PROXY_GROUPS.MICROSOFT}`,
     `GEOSITE,google,${PROXY_GROUPS.GOOGLE}`,
     `RULE-SET,Crypto,${PROXY_GROUPS.CRYPTO}`,
     `RULE-SET,GFWList,${PROXY_GROUPS.SELECT}`,
