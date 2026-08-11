@@ -36,8 +36,8 @@ function buildGroupByType({
                 icon,
                 type: "url-test",
                 url: SPEEDTEST_URL,
-                interval: 60,
-                tolerance: 20,
+                interval: 300,
+                tolerance: 30,
                 ...nodeSource,
             };
         case 2:
