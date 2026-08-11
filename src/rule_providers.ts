@@ -39,7 +39,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/TikTok.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/TikTok.list`,
         path: "./ruleset/TikTok.list",
     },
     SteamFix: {
@@ -47,7 +47,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/SteamFix.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/SteamFix.list`,
         path: "./ruleset/SteamFix.list",
     },
     SteamCN: {
@@ -71,7 +71,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/FirebaseCloudMessaging.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/FirebaseCloudMessaging.list`,
         path: "./ruleset/FirebaseCloudMessaging.list",
     },
     AdditionalFilter: {
@@ -79,7 +79,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/AdditionalFilter.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/AdditionalFilter.list`,
         path: "./ruleset/AdditionalFilter.list",
     },
     AdditionalCDNResources: {
@@ -87,7 +87,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/AdditionalCDNResources.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/AdditionalCDNResources.list`,
         path: "./ruleset/AdditionalCDNResources.list",
     },
     Crypto: {
@@ -95,7 +95,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/Crypto.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/Crypto.list`,
         path: "./ruleset/Crypto.list",
     },
     Weibo: {
@@ -103,7 +103,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         behavior: "classical",
         format: "text",
         interval: 86400,
-        url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/Weibo.list`,
+        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/Weibo.list`,
         path: "./ruleset/Weibo.list",
     },
     linkedin: {
