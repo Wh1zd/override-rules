@@ -50,6 +50,22 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: `${CDN_URL}/gh/powerfullz/override-rules@master/ruleset/SteamFix.list`,
         path: "./ruleset/SteamFix.list",
     },
+    SteamCN: {
+        type: "http",
+        behavior: "classical",
+        format: "yaml",
+        interval: 86400,
+        url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/SteamCN/SteamCN.yaml`,
+        path: "./ruleset/SteamCN.yaml",
+    },
+    Steam: {
+        type: "http",
+        behavior: "classical",
+        format: "yaml",
+        interval: 86400,
+        url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml`,
+        path: "./ruleset/Steam.yaml",
+    },
     GoogleFCM: {
         type: "http",
         behavior: "classical",
