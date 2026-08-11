@@ -27,6 +27,8 @@ const baseRules = [
     `RULE-SET,Weibo,${PROXY_GROUPS.WEIBO}`,
     `RULE-SET,TikTok,${PROXY_GROUPS.TIKTOK}`,
     `RULE-SET,SteamFix,DIRECT`,
+    `RULE-SET,SteamCN,DIRECT`,
+    `RULE-SET,Steam,${PROXY_GROUPS.STEAM}`,
     `RULE-SET,GoogleFCM,DIRECT`,
     `GEOSITE,google-play@cn,DIRECT`,
     `GEOSITE,microsoft@cn,DIRECT`,
