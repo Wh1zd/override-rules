@@ -11,9 +11,13 @@ import type { FeatureFlags, GroupType, ScriptArgs } from "./types";
  * @returns 解析后的代理组类型：0=select, 1=url-test, 2=load-balance
  */
 function parseGroupType(args: ScriptArgs): GroupType {
+    if (args.grouptype !== null && typeof args.grouptype !== "undefined") {
+        const raw = parseNumber(args.grouptype, 1);
+        if (raw === 0 || raw === 1 || raw === 2) return raw;
+        return 1;
+    }
+
     if (parseBool(args.loadbalance)) return 2; // 兼容旧参数：loadbalance=true 等价于 grouptype=2 (load-balance)
-    const raw = parseNumber(args.grouptype, 1);
-    if (raw === 0 || raw === 1 || raw === 2) return raw;
     return 1;
 }
 

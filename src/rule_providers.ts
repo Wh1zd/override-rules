@@ -130,7 +130,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Whatsapp/Whatsapp.yaml`,
         path: "./ruleset/whatsapp.yaml",
     },
-        Microsoft: {
+    Microsoft: {
         type: "http",
         behavior: "classical",
         format: "yaml",
@@ -138,7 +138,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml`,
         path: "./ruleset/Microsoft.yaml",
     },
-GFWList: {
+    GFWList: {
         type: "http",
         behavior: "domain",
         format: "yaml",
