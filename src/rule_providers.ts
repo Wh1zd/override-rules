@@ -66,6 +66,14 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: `${CDN_URL}/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.yaml`,
         path: "./ruleset/Steam.yaml",
     },
+    Emby: {
+        type: "http",
+        behavior: "classical",
+        format: "text",
+        interval: 86400,
+        url: "https://raw.githubusercontent.com/666OS/rules/release/surge/Emby.txt",
+        path: "./ruleset/Emby.txt",
+    },
     GoogleFCM: {
         type: "http",
         behavior: "classical",

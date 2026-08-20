@@ -20,6 +20,7 @@ const baseRules = [
     `GEOSITE,netflix,${PROXY_GROUPS.NETFLIX}`,
     `GEOSITE,twitch,${PROXY_GROUPS.TWITCH}`,
     `GEOIP,netflix,${PROXY_GROUPS.NETFLIX},no-resolve`,
+    `RULE-SET,Emby,${PROXY_GROUPS.EMBY}`,
     `GEOSITE,twitter,${PROXY_GROUPS.TWITTER}`,
     `RULE-SET,linkedin,${PROXY_GROUPS.LINKEDIN}`,
     `RULE-SET,whatsapp,${PROXY_GROUPS.WHATSAPP}`,

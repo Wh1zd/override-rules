@@ -177,6 +177,12 @@ export function buildProxyGroups({
             proxies: defaultProxies,
         },
         {
+            name: PROXY_GROUPS.EMBY,
+            icon: "https://raw.githubusercontent.com/lige47/lige_icon/main/icon/04ProxySoft/emby.png",
+            type: "select",
+            proxies: defaultProxies,
+        },
+        {
             name: PROXY_GROUPS.TIKTOK,
             icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/TikTok.png`,
             type: "select",
