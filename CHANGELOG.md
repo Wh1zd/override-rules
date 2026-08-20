@@ -1,5 +1,32 @@
 # Changelog
 
+## [2.5.22](https://github.com/powerfullz/override-rules/compare/src-v2.5.18...src-v2.5.22) (2026-08-20)
+
+
+### Bug Fixes
+
+- Apply health check settings to all proxy groups ([3940c1f](https://github.com/powerfullz/override-rules/commit/3940c1f7f253f1905b049fb86604e2a8f9081c8b))
+
+
+### Chores
+
+- Remove unused rulesets and fix group type parsing ([041c9e0](https://github.com/powerfullz/override-rules/commit/041c9e07856514d25603f9567e264c42b2ea38d6))
+
+
+### Features
+
+- Add Emby rule provider ([75fd401](https://github.com/powerfullz/override-rules/commit/75fd401efa637d09489f14a3aa12256b8b7b581d))
+
+
+### Other
+
+- Rule_providers.ts ([b2c2147](https://github.com/powerfullz/override-rules/commit/b2c214786e06bd15af277535b5022694c1b84b5c))
+- Rules.ts ([94a0370](https://github.com/powerfullz/override-rules/commit/94a0370a73bfe3bc132cf34d3c2a5397feb088e9))
+- Rules.ts ([201281e](https://github.com/powerfullz/override-rules/commit/201281e12b74ee3e5c8a7e1d401a7f2cf2e60917))
+- Rule_providers.ts ([97cf8b7](https://github.com/powerfullz/override-rules/commit/97cf8b743c6ea2f88e941f43a8157d63d3e5d207))
+- Proxy_groups.ts ([da4087b](https://github.com/powerfullz/override-rules/commit/da4087b5bd6e8037b57a65bb284d2ce8b9bc8488))
+- Constants.ts ([783183e](https://github.com/powerfullz/override-rules/commit/783183e1ce13f69006b1396b7fccc8e5174d3cf0))
+- Proxy_groups.ts ([7bc8a2e](https://github.com/powerfullz/override-rules/commit/7bc8a2e2bf95611941c321ae7700ba07972a8add))
 ## [2.5.18](https://github.com/powerfullz/override-rules/compare/src-v2.5.17...src-v2.5.18) (2026-07-26)
 
 
