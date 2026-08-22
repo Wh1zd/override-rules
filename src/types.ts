@@ -183,7 +183,6 @@ export interface CaseInsensitiveNodeMatcher {
 
 export interface BaseLists {
     defaultProxies: string[];
-    defaultProxiesDirect: string[];
     defaultSelector: string[];
     defaultFallback: string[];
     frontProxySelector: string[];
@@ -206,7 +205,6 @@ export interface BuildProxyGroupsInput {
     landing: boolean;
     landingNodes: ProxyNode[];
     defaultProxies: string[];
-    defaultProxiesDirect: string[];
     defaultSelector: string[];
     defaultFallback: string[];
     frontProxySelector: string[];

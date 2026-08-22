@@ -75,19 +75,15 @@ function main(config: ClashConfig): ClashConfig {
     const lowCostNodes = parseLowCost(landing ? nonLandingNodes : config.proxies);
     const countryNames = getActiveCountryNames(countryNodes, countryThreshold);
 
-    const {
-        defaultProxies,
-        defaultProxiesDirect,
-        defaultSelector,
-        defaultFallback,
-        frontProxySelector,
-    } = buildBaseLists({
-        landing,
-        lowCostNodes,
-        countryNames,
-        nonLandingNodes,
-        regexFilter,
-    });
+    const { defaultProxies, defaultSelector, defaultFallback, frontProxySelector } = buildBaseLists(
+        {
+            landing,
+            lowCostNodes,
+            countryNames,
+            nonLandingNodes,
+            regexFilter,
+        }
+    );
 
     const proxyGroups = buildProxyGroups({
         regexFilter,
@@ -98,7 +94,6 @@ function main(config: ClashConfig): ClashConfig {
         landing,
         landingNodes,
         defaultProxies,
-        defaultProxiesDirect,
         defaultSelector,
         defaultFallback,
         frontProxySelector,

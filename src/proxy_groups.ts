@@ -68,13 +68,10 @@ export function buildProxyGroups({
     landing,
     landingNodes,
     defaultProxies,
-    defaultProxiesDirect,
     defaultSelector,
     defaultFallback,
     frontProxySelector,
 }: BuildProxyGroupsInput): ProxyGroup[] {
-    const hasTW = countryNames.includes("台湾");
-    const hasHK = countryNames.includes("香港");
     const groups: Array<ProxyGroup | null> = [
         {
             name: PROXY_GROUPS.SELECT,
@@ -153,12 +150,6 @@ export function buildProxyGroups({
             proxies: defaultProxies,
         },
         {
-            name: PROXY_GROUPS.BILIBILI,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/bilibili.png`,
-            type: "select",
-            proxies: hasTW && hasHK ? ["DIRECT", `台湾节点`, `香港节点`] : defaultProxiesDirect,
-        },
-        {
             name: PROXY_GROUPS.YOUTUBE,
             icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/YouTube.png`,
             type: "select",
@@ -183,12 +174,6 @@ export function buildProxyGroups({
             proxies: defaultProxies,
         },
         {
-            name: PROXY_GROUPS.TIKTOK,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/TikTok.png`,
-            type: "select",
-            proxies: defaultProxies,
-        },
-        {
             name: PROXY_GROUPS.STEAM,
             icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Steam.png`,
             type: "select",
@@ -199,25 +184,6 @@ export function buildProxyGroups({
             icon: `${CDN_URL}/gh/powerfullz/override-rules@master/icons/Telegram.png`,
             type: "select",
             proxies: defaultProxies,
-        },
-        {
-            name: PROXY_GROUPS.TWITTER,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Twitter.png`,
-            type: "select",
-            proxies: defaultProxies,
-        },
-        {
-            name: PROXY_GROUPS.WEIBO,
-            icon: `${CDN_URL}/gh/Koolson/Qure@master/IconSet/Color/Weibo.png`,
-            type: "select",
-            "include-all": true,
-            proxies: defaultProxiesDirect,
-        },
-        {
-            name: PROXY_GROUPS.SOGOU_INPUT,
-            icon: `${CDN_URL}/gh/powerfullz/override-rules@master/icons/Sougou.png`,
-            type: "select",
-            proxies: ["DIRECT", "REJECT"],
         },
         {
             name: PROXY_GROUPS.SSH,
