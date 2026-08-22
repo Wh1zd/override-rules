@@ -32,7 +32,7 @@ import { ruleProviders } from "./rule_providers";
 import { buildDns, snifferConfig } from "./dns";
 import { buildTunConfig } from "./tun";
 import { buildBaseLists } from "./selectors";
-import type { ClashConfig, ScriptArgs } from "./types";
+import type { ClashConfig, DnsConfig, ScriptArgs } from "./types";
 
 const geoxURL = {
     geoip: `${CDN_URL}/gh/MetaCubeX/meta-rules-dat@release/geoip.dat`,
@@ -109,6 +109,20 @@ function main(config: ClashConfig): ClashConfig {
     });
 
     const finalRules = buildRules({ quicEnabled });
+    const generatedDns = buildDns({ fakeIPEnabled, ipv6Enabled });
+    const sourceDns: Partial<DnsConfig> = config.dns ?? {};
+    const dns = {
+        ...generatedDns,
+        ...sourceDns,
+        "nameserver-policy": {
+            ...(sourceDns["nameserver-policy"] ?? {}),
+            "+.mouckegogaidy.com": ["https://jeeyio.com/api/dns-query"],
+        },
+        "proxy-server-nameserver-policy": {
+            ...(sourceDns["proxy-server-nameserver-policy"] ?? {}),
+            "+.mouckegogaidy.com": ["https://jeeyio.com/api/dns-query"],
+        },
+    };
 
     return {
         proxies: config.proxies,
@@ -134,7 +148,7 @@ function main(config: ClashConfig): ClashConfig {
         "rule-providers": ruleProviders,
         rules: finalRules,
         sniffer: snifferConfig,
-        dns: buildDns({ fakeIPEnabled, ipv6Enabled }),
+        dns,
         tun: buildTunConfig(tunEnabled),
         "geodata-mode": true,
         "geox-url": geoxURL,
