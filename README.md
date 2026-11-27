@@ -4,7 +4,7 @@
 
 ![](img/cover.png)
 
-[![](https://data.jsdelivr.com/v1/package/gh/powerfullz/override-rules/badge?style=rounded)](https://www.jsdelivr.com/package/gh/powerfullz/override-rules)
+[![](https://data.jsdelivr.com/v1/package/gh/Wh1zd/override-rules/badge?style=rounded)](https://www.jsdelivr.com/package/gh/Wh1zd/override-rules)
 
 本仓库为 Mihomo/Substore 设计，提供高效、灵活的覆写规则（**不建议用于 Stash**）。核心特色如下：
 
@@ -17,21 +17,7 @@
 
 > 本项目为本人自用，欢迎交流建议（Issue/PR）。如无特殊反馈，将优先满足个人需求与体验优化。
 
-[点击访问 Forgejo 上的镜像](https://git.l3zc.com/powerfullz/override-rules)
-
-### AFF
-
-#### FlowerCloud
-
-[注册链接](https://api-flowercloud.com/aff.php?aff=4352)
-
-目前我的主力机场，也是一家老牌一线机场了，线路扎实，冗余足够，实验性节点0.2倍率，部分地区的高级节点是家宽落地，用起来还是很舒服的。
-
-#### 星岛梦
-
-[注册链接](https://luics.xdmvipaff.cc/#/?code=MMB4xSlc)
-
-星岛梦是一家 2025 年 12 月刚开业的机场，机场主在测试的时候就来找我了，我因此有幸从早期测试阶段便开始关注，见证了机场主熬夜修线路换落地的过程，目前体验还不错。算上日常折扣性价比还可以，大家可以月付体验一下。
+[查看最新 Release](https://github.com/Wh1zd/override-rules/releases/latest)
 
 ### 使用方法
 
@@ -129,11 +115,11 @@ https://raw.githubusercontent.com/Wh1zd/override-rules/refs/heads/preview/conver
 
 > [!NOTE]
 > 为了保持代码仓库的纯净，`main` 主分支不再跟踪和提交生成的产物文件（如 `convert.js` 和 `yamls/`）。
-> 这些构建产物目前统一由 Github Actions 的 Release 工作流在发布 `v*` 版本时，构建并自动推送到当前分支及 Release 中；工作流会自动根据 Tag（例如 `v2.1.0`）同步 `package.json` / `package-lock.json` 的版本号，无需手动改版本。
+> 推送 `src-v*` 源码标签后，GitHub Actions 的 Release 工作流会构建产物并发布到本仓库的 `dist` 分支、对应的 `v*` 标签及 Release。
 
 获取 YAML 覆写文件的链接格式如下：
 
-- **最新正式版**：`/yamls/*.yaml` (默认主分支或不带分支名)
+- **最新正式版**：`@dist/yamls/*.yaml`
 - **特定历史版本**：`@vX.Y.Z/yamls/*.yaml`
 
 文件名新增 `adblock` 段，共 768 种组合。旧 YAML 链接需要按新格式更新：
@@ -149,12 +135,12 @@ https://cdn.jsdelivr.net/gh/Wh1zd/override-rules@dist/yamls/config_gt-0_adblock-
 
 **固定版本获取示例：**
 ```text
-https://cdn.jsdelivr.net/gh/Wh1zd/override-rules@v0.1.0/yamls/config_gt-0_adblock-0_ipv6-0_full-1_keepalive-0_fakeip-0_quic-0_tun-0.yaml
+https://cdn.jsdelivr.net/gh/Wh1zd/override-rules@v2.5.25/yamls/config_gt-0_adblock-0_ipv6-0_full-1_keepalive-0_fakeip-0_quic-0_tun-0.yaml
 ```
 
-如果使用镜像：
+如果希望使用 GitHub Raw：
 ```text
-https://git.l3zc.com/powerfullz/override-rules/raw/branch/dist/yamls/config_gt-0_adblock-0_ipv6-0_full-1_keepalive-0_fakeip-0_quic-0_tun-0.yaml
+https://raw.githubusercontent.com/Wh1zd/override-rules/refs/heads/dist/yamls/config_gt-0_adblock-0_ipv6-0_full-1_keepalive-0_fakeip-0_quic-0_tun-0.yaml
 ```
 
 *注：CI 仅套用了一份虚拟的 `fake_proxies.json` 来模拟生成 YAML，因此它无法像 JS 动态脚本那样根据你的实际节点智能生成专属分组策略，只能保守地包含常用的国家/地区。为了最高效的分流体验，仍强烈推荐使用 JS 覆写。*
