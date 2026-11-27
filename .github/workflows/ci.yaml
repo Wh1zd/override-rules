@@ -26,10 +26,13 @@ jobs:
         run: npm run typecheck
 
       - name: Format
-        run: npm run format
+        run: npm run format:check
 
       - name: Lint
         run: npm run lint
+
+      - name: Test
+        run: npm test
 
       - name: Verify reproducible artifacts build
         run: npm run artifacts

@@ -40,7 +40,7 @@ jobs:
         run: npm ci || npm install --no-audit --no-fund
 
       - name: Validate source
-        run: npm run typecheck && npm run format && npm run lint
+        run: npm run typecheck && npm run format:check && npm run lint && npm test
 
       - name: Build release artifacts
         run: npm run artifacts
@@ -147,9 +147,9 @@ jobs:
           
           构建产物已同步并放于根目录。
 
-          - JS 覆写 (最新版, 推荐)：`https://cdn.jsdelivr.net/gh/${{ github.repository }}/convert.min.js`
+          - JS 覆写 (最新版, 推荐)：`https://cdn.jsdelivr.net/gh/${{ github.repository }}@dist/convert.min.js`
           - JS 覆写 (当前版本)：`https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ env.VERSION }}/convert.min.js`
-          - YAML 索引 (最新版)：`https://cdn.jsdelivr.net/gh/${{ github.repository }}/manifest.json`
+          - YAML 索引 (最新版)：`https://cdn.jsdelivr.net/gh/${{ github.repository }}@dist/manifest.json`
           - YAML 索引 (当前版本)：`https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ env.VERSION }}/manifest.json`
           EOF
 
@@ -167,5 +167,5 @@ jobs:
         run: |
           set -euo pipefail
 
-          curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}/convert.min.js"
+          curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@dist/convert.min.js"
           curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@${{ env.VERSION }}/convert.min.js"

@@ -1,7 +1,7 @@
 {
   "name": "override-rules",
   "private": true,
-  "version": "2.5.22",
+  "version": "2.5.25",
   "description": "Override rules YAML generator",
   "license": "MIT",
   "type": "commonjs",
@@ -17,7 +17,8 @@
     "prepare": "husky",
     "preversion": "npm run lint && npm run typecheck",
     "version": "node scripts/changelog.mjs && git add CHANGELOG.md",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "test": "node --import tsx --test \"tests/**/*.test.ts\""
   },
   "dependencies": {
     "yaml": "^2.9.0"

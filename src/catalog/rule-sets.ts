@@ -1,7 +1,7 @@
-import { CDN_URL } from "./constants";
-import type { RuleProvider } from "./types";
+import { CDN_URL } from "./endpoints";
+import type { RuleProvider } from "../types/clash";
 
-export const ruleProviders: Record<string, RuleProvider> = {
+export const ruleSets = {
     ADBlock: {
         type: "http",
         behavior: "domain",
@@ -57,14 +57,6 @@ export const ruleProviders: Record<string, RuleProvider> = {
         interval: 86400,
         url: "https://raw.githubusercontent.com/666OS/rules/release/surge/Emby.txt",
         path: "./ruleset/Emby.txt",
-    },
-    GoogleFCM: {
-        type: "http",
-        behavior: "classical",
-        format: "text",
-        interval: 86400,
-        url: `${CDN_URL}/gh/Wh1zd/override-rules@main/ruleset/FirebaseCloudMessaging.list`,
-        path: "./ruleset/FirebaseCloudMessaging.list",
     },
     AdditionalFilter: {
         type: "http",
@@ -130,4 +122,35 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
         path: "./ruleset/GFWList.yaml",
     },
-};
+} as const satisfies Record<string, RuleProvider>;
+
+export const adblockAlternatives = {
+    1: {
+        type: "http",
+        behavior: "domain",
+        format: "mrs",
+        interval: 86400,
+        url: "https://adrules.top/adrules-mihomo.mrs",
+        path: "./ruleset/ADBlock.mrs",
+    },
+    3: {
+        type: "http",
+        behavior: "domain",
+        format: "mrs",
+        interval: 86400,
+        url: `${CDN_URL}/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.mrs`,
+        path: "./ruleset/ADBlock.mrs",
+    },
+} satisfies Record<1 | 3, RuleProvider>;
+
+/** 所有合法的规则集名称。 */
+export type RuleSetKey = keyof typeof ruleSets;
+
+/**
+ * 生成一条 `RULE-SET` 规则。
+ * @param key - 规则集名称，必须是已注册的 `RuleSetKey`
+ * @param target - 命中的目标策略组或动作（DIRECT/REJECT 等）
+ */
+export function ruleSet(key: RuleSetKey, target: string): string {
+    return `RULE-SET,${key},${target}`;
+}

@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.5.25](https://github.com/Wh1zd/override-rules/compare/src-v2.5.24...src-v2.5.25) (2026-11-27)
+
+### 更新
+
+- 采用上游 v2.10.2 的核心结构、DNS 字段继承、地区展平、广告源选择及 YAML 生成优化。
+- 删除 mouckegogaidy.com 指向 jeeyio.com 的专用 DoH 策略；保留有效源 DNS 策略、监听地址和 hosts。
+- 保留本分支的 Emby、LinkedIn、Facebook、WhatsApp、Steam、Microsoft、Crypto、SSH 等定制分流，不添加金融、TikTok 或 Tailscale 专用组和规则。
+- 静态资源优先低倍率节点，补充 VS Code 下载域名。
+- TUN 使用 mips 网络栈和 MTU 9000，需要支持 mips 的新版 Mihomo。
+
+### 修复与验证
+
+- 修复单节点和空订阅生成空代理组的问题；正则地区组和低倍率组排除落地节点以防止链式代理循环。
+- 完整配置的控制接口默认仅监听本机，保留源密码和符合条件的显式控制地址。
+- 增加自动回归测试，CI 与 Release 发布前执行类型、格式、lint 和测试检查。
+- YAML 文件名新增 adblock 段，共 768 种组合，旧静态 YAML 链接需按新格式更新。
+
 ## [2.5.22](https://github.com/powerfullz/override-rules/compare/src-v2.5.18...src-v2.5.22) (2026-08-20)
 
 
